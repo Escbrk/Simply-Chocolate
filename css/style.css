@@ -1,0 +1,97 @@
+@import url(./variables.css);
+
+/*! ============= BASE ============= */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark); 
+}
+
+* {
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+/*! ============= /BASE ============= */
+
+/*! ============= HEADER STYLES =============*/
+
+.logo {
+  color: var(--dark);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+
+.logo-icon {
+  fill: transparent;
+  stroke: var(--accent);
+}
+
+.social-icon {
+  fill: transparent;
+  stroke: var(--dark);
+}
+
+.social-icon:hover {
+  stroke: var(--accent);
+}
+
+.page-header,
+.main-nav,
+.menu,
+.header-media {
+  display: flex;
+}
+
+.menu {
+  gap: 24px;
+}
+
+.menu-item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+.menu-item a {
+  color: var(--dark);
+}
+
+.menu-item a:hover,
+.menu-item a:focus {
+  color: var(--accent);
+}
+
+/*! ============= /HEADER STYLES =============*/
