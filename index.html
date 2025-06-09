@@ -13,110 +13,129 @@
       rel="stylesheet"
     />
 
+    <!-- Modern Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+
     <!-- My Styles -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <a href="" class="logo">
-          <i>Simply</i>
-          Chocolate
-          <svg class="logo-icon">
-            <use href="./img/icons/sprite.svg#icon-chocolate"></use>
-          </svg>
-        </a>
+    <header class="page-header page-container">
+      <a href="" class="logo">
+        <i>Simply</i> Chocolate
+        <svg class="logo-icon">
+          <use href="./img/icons/sprite.svg#icon-chocolate"></use>
+        </svg>
+      </a>
 
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="/">Home</a>
-          </li>
-          <li class="menu-item">
-            <a href="#process">How it’s made?</a>
-          </li>
-          <li class="menu-item">
-            <a href="#chocolateIsLoved">Chocolate is loved</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-flex-container">
+        <nav class="main-nav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="/">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="#process">How it's made?</a>
+            </li>
+            <li class="menu-item">
+              <a href="#chocolateIsLoved">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
 
-      <address>
-        <ul class="header-media">
-          <li>
-            <a href="">
-              <svg class="social-icon">
-                <use href="./img/icons/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg class="social-icon">
-                <use href="./img/icons/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg class="social-icon">
-                <use href="./img/icons/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </address>
+        <address>
+          <ul class="header-media">
+            <li>
+              <a href="">
+                <svg class="social-icon">
+                  <use href="./img/icons/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="social-icon">
+                  <use href="./img/icons/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="social-icon">
+                  <use href="./img/icons/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main>
-      <!--! Hero Section -->
-      <section>
-        <h1>
-          Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+      <!--! HERO SECTION -->
+      <!-- <section class="hero-section page-container">
+        <h1 class="title">
+          Treat yourself or a loved one to <br> our finest ingredients for a moment <br>
+          of pure delight!
         </h1>
 
-        <div>
-          <button type="button">Buy now</button>
-          <a href="#">How it’s made</a>
+        <div class="btn-container">
+          <div>
+            <button type="button" class="hero-btn">Buy now</button>
+            <a href="#" class="hero-link-btn">How it’s made</a>
+          </div>
+
+          <a href="" class="scroll-btn"
+            >scroll down
+            <svg class="hero-icon">
+              <use href="./img/icons/sprite.svg#icon-arrow-down"></use>
+            </svg>
+          </a>
         </div>
+      </section> -->
 
-        <a href="">scroll down</a>
+      <!--! FEATURES SECTION -->
+      <section class="features-section">
+        <div class="page-container">
+          <h2 class="visually-hidden">Our features</h2>
+
+          <ul class="featured-list">
+            <li class="features-item">
+              <h3 class="features-title">Unsurpassed taste</h3>
+              <p class="features-text">
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-title">Affordable price</h3>
+              <p class="features-text">
+                Indulge in high-quality chocolate without breaking the bank with
+                Simply Chocolate's selection of affordable treats. Enjoy
+                mouth-watering truffles and velvety chocolate bars without
+                sacrificing taste or quality. Browse our selection and indulge
+                in affordable luxury today.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-title">Own production</h3>
+              <p class="features-text">
+                We take pride in our own production process, ensuring that every
+                step is carefully crafted to perfection. From selecting the
+                finest ingredients to handcrafting each piece, our attention to
+                detail is evident in every bite.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <!--! Features Section -->
-      <section>
-        <h2 class="visually-hidden">Our features</h2>
-
-        <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
-              Crafted with the finest quality cocoa beans and a dedication to perfection, each bite
-              is a decadent experience that simply cannot be matched. Savor the richness and
-              complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
-            </p>
-          </li>
-          <li>
-            <h3>Affordable price</h3>
-            <p>
-              Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's
-              selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate
-              bars without sacrificing taste or quality. Browse our selection and indulge in
-              affordable luxury today.
-            </p>
-          </li>
-          <li>
-            <h3>Own production</h3>
-            <p>
-              We take pride in our own production process, ensuring that every step is carefully
-              crafted to perfection. From selecting the finest ingredients to handcrafting each
-              piece, our attention to detail is evident in every bite.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <!--! Ingredients Section -->
-      <section>
+      <!-- <section>
         <h2>
           It all adds up to one excaptional
           <span>taste</span>
@@ -173,16 +192,14 @@
             <h3>Coconut Oil</h3>
           </li>
         </ul>
-      </section>
+      </section> -->
 
-      <!--! Process Section -->
-      <section id="process">
+      <!-- <section id="process">
         <h2>
           How it's
           <span>made</span>
           ?
         </h2>
-        <!-- <img src="" alt=""> -->
 
         <h3>Try our chocolates today and discover the perfect balance of flavor</h3>
 
@@ -201,21 +218,18 @@
             cool and harden.
           </li>
         </ul>
-      </section>
+      </section> -->
 
-      <!--! Products Section -->
-      <section>
+      <!-- <section>
         <h2>
           Our
           <span>products</span>
         </h2>
-      </section>
+      </section> -->
 
-      <!--! Sellers Section -->
-      <section></section>
+      <!-- <section></section> -->
 
-      <!--! Rewievs Section -->
-      <section id="chocolateIsLoved">
+      <!-- <section id="chocolateIsLoved">
         <h2>
           <span>chocolate</span>
           is loved
@@ -249,10 +263,10 @@
         </ul>
 
         <button type="button">Leave a review</button>
-      </section>
+      </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
       <div>
         <h2>
           <span>Chocolate</span>
@@ -307,6 +321,6 @@
           <button>Subscribe</button>
         </form>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
