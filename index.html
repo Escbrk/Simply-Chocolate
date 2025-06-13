@@ -23,15 +23,15 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="page-header page-container">
+    <header class="page-header container">
       <a href="" class="logo">
         <i>Simply</i> Chocolate
         <svg class="logo-icon">
-          <use href="./img/icons/sprite.svg#icon-chocolate"></use>
+          <use href="./img/icons/sprite.svg#icon-chocolate-logo"></use>
         </svg>
       </a>
 
-      <div class="header-flex-container">
+      <div class="header-nav-container">
         <nav class="main-nav">
           <ul class="menu">
             <li class="menu-item">
@@ -76,34 +76,40 @@
 
     <main>
       <!--! HERO SECTION -->
-      <!-- <section class="hero-section page-container">
-        <h1 class="title">
-          Treat yourself or a loved one to <br> our finest ingredients for a moment <br>
-          of pure delight!
-        </h1>
+      <section class="hero-section container">
+        <div class="container">
+          <h1 class="title">
+            Treat yourself or a loved one to <br />
+            our finest ingredients for a moment <br />
+            of pure delight!
+          </h1>
 
-        <div class="btn-container">
-          <div>
-            <button type="button" class="hero-btn">Buy now</button>
-            <a href="#" class="hero-link-btn">How it’s made</a>
+          <div class="btn-container">
+            <div>
+              <button type="button" class="hero-btn">Buy now</button>
+              <a href="#" class="hero-link-btn">How it’s made</a>
+            </div>
+
+            <a href="" class="scroll-btn"
+              >scroll down
+              <svg class="hero-icon">
+                <use href="./img/icons/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </a>
           </div>
-
-          <a href="" class="scroll-btn"
-            >scroll down
-            <svg class="hero-icon">
-              <use href="./img/icons/sprite.svg#icon-arrow-down"></use>
-            </svg>
-          </a>
         </div>
-      </section> -->
+      </section>
 
       <!--! FEATURES SECTION -->
       <section class="features-section">
-        <div class="page-container">
+        <div class="container">
           <h2 class="visually-hidden">Our features</h2>
 
           <ul class="featured-list">
             <li class="features-item">
+              <svg class="features-icon">
+                <use href="./img/icons/sprite.svg#icon-chocolate-bar"></use>
+              </svg>
               <h3 class="features-title">Unsurpassed taste</h3>
               <p class="features-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -113,6 +119,9 @@
               </p>
             </li>
             <li class="features-item">
+              <svg class="features-icon">
+                <use href="./img/icons/sprite.svg#icon-coin"></use>
+              </svg>
               <h3 class="features-title">Affordable price</h3>
               <p class="features-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -123,6 +132,9 @@
               </p>
             </li>
             <li class="features-item">
+              <svg class="features-icon">
+                <use href="./img/icons/sprite.svg#icon-spoon"></use>
+              </svg>
               <h3 class="features-title">Own production</h3>
               <p class="features-text">
                 We take pride in our own production process, ensuring that every
@@ -135,103 +147,259 @@
         </div>
       </section>
 
-      <!-- <section>
-        <h2>
-          It all adds up to one excaptional
-          <span>taste</span>
-          sensation
+      <section class="ingredients-section container">
+        <h2 class="ingredients-title section-title">
+          It all adds up to one exceptional
+          <span class="accent">taste</span>
+          ingredients
         </h2>
-        <p>
+        <!-- <p>
           At Simply Chocolate, we believe that the secret to exceptional chocolate is in the
           details. From the sourcing of the finest ingredients to the careful crafting of each
-          individual piece, every step of our process adds up to one exceptional taste sensation.
-        </p>
+          individual piece, every step of our process adds up to one exceptional taste ingredients.
+        </p> -->
 
-        <ul>
-          <li>
+        <ul class="ingredients-list">
+          <li class="ingredients-item">
+            <svg class="ingredients-icon">
+              <use href="./img/icons/sprite.svg#icon-arrow"></use>
+            </svg>
             <img
+              class="ingredients-img"
               src="./img/ingrediends/milk-chocolate.png"
               alt="milk chocolate"
-              width="214"
-              height="160"
             />
-            <h3>Milk Chocolate</h3>
+            <h3 class="ingredients-list-title">Milk Chocolate</h3>
           </li>
-          <li>
-            <img src="./img/ingrediends/milk.png" alt="milk" width="214" height="160" />
-            <h3>Milk</h3>
-          </li>
-          <li>
-            <img src="./img/ingrediends/nuts.png" alt="nuts" width="214" height="160" />
-            <h3>Nuts</h3>
-          </li>
-          <li>
+          <li class="ingredients-item">
+            <svg class="ingredients-icon">
+              <use href="./img/icons/sprite.svg#icon-arrow"></use>
+            </svg>
             <img
+              class="ingredients-img"
+              src="./img/ingrediends/milk.png"
+              alt="milk"
+            />
+            <h3 class="ingredients-list-title">Milk</h3>
+          </li>
+          <li class="ingredients-item">
+            <svg class="ingredients-icon">
+              <use href="./img/icons/sprite.svg#icon-arrow"></use>
+            </svg>
+            <img
+              class="ingredients-img"
+              src="./img/ingrediends/nuts.png"
+              alt="nuts"
+            />
+            <h3 class="ingredients-list-title">Nuts</h3>
+          </li>
+          <li class="ingredients-item">
+            <svg class="ingredients-icon">
+              <use href="./img/icons/sprite.svg#icon-arrow"></use>
+            </svg>
+            <img
+              class="ingredients-img"
               src="./img/ingrediends/semi-sweet-chocolate.png"
               alt="semi-sweet chocolate"
-              width="214"
-              height="160"
             />
-            <h3>Semi - Sweet Chocolate</h3>
+            <h3 class="ingredients-list-title">Semi - Sweet Chocolate</h3>
           </li>
-          <li>
-            <img src="./img/ingrediends/cacao.png" alt="cacao" width="214" height="160" />
-            <h3>Cacao</h3>
-          </li>
-          <li>
-            <img src="./img/ingrediends/raspberry.png" alt="raspberry" width="214" height="160" />
-            <h3>Raspberry</h3>
-          </li>
-          <li>
+          <li class="ingredients-item">
+            <svg class="ingredients-icon">
+              <use href="./img/icons/sprite.svg#icon-arrow"></use>
+            </svg>
             <img
+              class="ingredients-img"
+              src="./img/ingrediends/cacao.png"
+              alt="cacao"
+            />
+            <h3 class="ingredients-list-title">Cacao</h3>
+          </li>
+          <li class="ingredients-item">
+            <svg class="ingredients-icon">
+              <use href="./img/icons/sprite.svg#icon-arrow"></use>
+            </svg>
+            <img
+              class="ingredients-img"
+              src="./img/ingrediends/raspberry.png"
+              alt="raspberry"
+            />
+            <h3 class="ingredients-list-title">Raspberry</h3>
+          </li>
+          <li class="ingredients-item">
+            <svg class="ingredients-icon">
+              <use href="./img/icons/sprite.svg#icon-arrow"></use>
+            </svg>
+            <img
+              class="ingredients-img"
               src="./img/ingrediends/coconut-oil.png"
               alt="coconut oil"
-              width="214"
-              height="160"
             />
-            <h3>Coconut Oil</h3>
+            <h3 class="ingredients-list-title">Coconut Oil</h3>
           </li>
         </ul>
-      </section> -->
+      </section>
 
-      <!-- <section id="process">
-        <h2>
+      <section id="process" class="process-section container">
+        <h2 class="section-title">
           How it's
-          <span>made</span>
+          <span class="accent">made</span>
           ?
         </h2>
 
-        <h3>Try our chocolates today and discover the perfect balance of flavor</h3>
+        <div class="wrapper">
+          <iframe
+            class="wrapper-element"
+            src="https://www.youtube.com/embed/hamUrh8dl7o?si=6hHMDr9dNvWp190o"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="wrapper-element">
+            <h3 class="wrapper-title">
+              Try our chocolates today and discover the perfect balance of
+              flavor
+            </h3>
 
-        <ul>
-          <li>
-            Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
+            <ul class="wrapper-list">
+              <li class="wrapper-item">
+                Heat the milk in a saucepan without bringing it to a boil. Add
+                sugar and cocoa powder.
+              </li>
+              <li class="wrapper-item">
+                At the same time, prepare a water bath. Melt the butter on it.
+              </li>
+              <li class="wrapper-item">
+                "Mix" the milk mixture and already liquid butter. Mix thoroughly
+                with a silicone spatula so that the mass becomes uniform and
+                silky.
+              </li>
+              <li class="wrapper-item">
+                Heat the mixture over low heat, letting it barely boil.
+              </li>
+              <li class="wrapper-item">
+                Pour the chocolate into special containers (can be replaced with
+                ice molds). Allow to cool and harden.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-section container">
+        <h2 class="section-title">
+          Our
+          <span class="accent">products</span>
+        </h2>
+
+        <ul class="products-list">
+          <li class="products-item">
+            <img
+              src="./img/products/orange.jpg"
+              alt="Orange"
+              class="products-img"
+            />
+            <h3 class="products-title">Orange</h3>
+            <span>Dark chocolate</span>
+            <p class="products-price">45 uah</p>
           </li>
-          <li>At the same time, prepare a water bath. Melt the butter on it.</li>
-          <li>
-            "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula
-            so that the mass becomes uniform and silky.
+          <li class="products-item">
+            <img
+              src="./img/products/apple-cranberry.jpg"
+              alt="Apple&Cranberry"
+              class="products-img"
+            />
+            <h3 class="products-title">Apple&Cranberry</h3>
+            <span>Milk chocolate</span>
+            <p class="products-price">50 uah</p>
           </li>
-          <li>Heat the mixture over low heat, letting it barely boil.</li>
-          <li>
-            Pour the chocolate into special containers (can be replaced with ice molds). Allow to
-            cool and harden.
+          <li class="products-item">
+            <img
+              src="./img/products/lime-sea-salt.jpg"
+              alt="Lime&Sea Salt"
+              class="products-img"
+            />
+            <h3 class="products-title">Lime&Sea Salt</h3>
+            <span>Dark chocolate</span>
+            <p class="products-price">66 uah</p>
+          </li>
+          <li class="products-item">
+            <img
+              src="./img/products/pineapple.jpg"
+              alt="Pineapple"
+              class="products-img"
+            />
+            <h3 class="products-title">Pineapple</h3>
+            <span>Dark chocolate</span>
+            <p class="products-price">54 uah</p>
+          </li>
+          <li class="products-item">
+            <img
+              src="./img/products/classic-milk.jpg"
+              alt="Classic - Milk"
+              class="products-img"
+            />
+            <h3 class="products-title">Classic - Milk</h3>
+            <span>Milk chocolate</span>
+            <p class="products-price">45 uah</p>
+          </li>
+          <li class="products-item">
+            <img
+              src="./img/products/honey.jpg"
+              alt="Honey"
+              class="products-img"
+            />
+            <h3 class="products-title">Honey</h3>
+            <span>Milk chocolate</span>
+            <p class="products-price">50 uah</p>
+          </li>
+          <li class="products-item">
+            <img
+              src="./img/products/roasted-fruits.jpg"
+              alt="Roasted Fruits"
+              class="products-img"
+            />
+            <h3 class="products-title">Roasted Fruits</h3>
+            <span>Dark chocolate</span>
+            <p class="products-price">66 uah</p>
+          </li>
+          <li class="products-item">
+            <img
+              src="./img/products/classic-white.jpg"
+              alt="Classic - White"
+              class="products-img"
+            />
+            <h3 class="products-title">Classic - White</h3>
+            <span>White chocolate</span>
+            <p class="products-price">54 uah</p>
           </li>
         </ul>
-      </section> -->
+      </section>
 
-      <!-- <section>
-        <h2>
-          Our
-          <span>products</span>
-        </h2>
-      </section> -->
+      <section class="sellers-section container">
+        <h2 class="section-title"><span class="accent">Top</span> Sellers</h2>
 
-      <!-- <section></section> -->
+        <ul class="sellers-list">
+          <li class="sellers-item">
+            <img src="" alt="" class="sellers-img" />
+            <h3 class="sellers-title">Chocolate with nuts</h3>
+          </li>
+          <li class="sellers-item">
+            <img src="" alt="" class="sellers-img" />
+            <h3 class="sellers-title">Chocolate with fruits</h3>
+          </li>
+          <li class="sellers-item">
+            <img src="" alt="" class="sellers-img" />
+            <h3 class="sellers-title">Dark chocolate</h3>
+          </li>
+        </ul>
+      </section>
 
       <!-- <section id="chocolateIsLoved">
         <h2>
-          <span>chocolate</span>
+          <span class="accent">chocolate</span>
           is loved
         </h2>
 
@@ -269,7 +437,7 @@
     <!-- <footer>
       <div>
         <h2>
-          <span>Chocolate</span>
+          <span class="accent">Chocolate</span>
           a delicious cure for a bad day
         </h2>
 
