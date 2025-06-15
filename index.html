@@ -383,11 +383,20 @@
 
         <ul class="sellers-list">
           <li class="sellers-item">
-            <img
-              src="./img/top_sellers/chocolate_with_nuts.jpg"
-              alt=""
-              class="sellers-img"
-            />
+            <div class="sellers-img-wrapper">
+              <img
+                src="./img/top_sellers/chocolate_with_nuts.jpg"
+                alt=""
+                class="sellers-img"
+              />
+              <p class="sellers-description">
+                Chocolate with nuts is a delectable combination that brings
+                together the smoothness of chocolate and the crunchiness of
+                nuts. Whether it's milk chocolate, dark chocolate, or white
+                chocolate, the addition of nuts adds a whole new dimension of
+                flavor and texture.
+              </p>
+            </div>
             <h3 class="sellers-title">Chocolate with nuts</h3>
           </li>
           <li class="sellers-item">
@@ -407,44 +416,65 @@
             <h3 class="sellers-title">Chocolate with fruits</h3>
           </li>
           <li class="sellers-item">
-            <img
-              src="./img/top_sellers/dark_chocolate.jpg"
-              alt=""
-              class="sellers-img"
-            />
+            <div class="sellers-img-wrapper">
+              <img
+                src="./img/top_sellers/dark_chocolate.jpg"
+                alt=""
+                class="sellers-img"
+              />
+              <p class="sellers-description">
+                Dark chocolate is a rich and indulgent treat that is beloved by
+                many chocolate enthusiasts. It is made from cocoa beans, which
+                are roasted, ground, and then processed to produce chocolate
+                liquor. Dark chocolate contains a higher percentage of cocoa
+                solids compared to milk chocolate.
+              </p>
+            </div>
             <h3 class="sellers-title">Dark chocolate</h3>
           </li>
         </ul>
       </section>
 
-      <section id="chocolateIsLoved">
-        <h2>
+      <section id="chocolateIsLoved" class="container">
+        <h2 class="section-title">
           <span class="accent">chocolate</span>
           is loved
         </h2>
 
-        <ul>
-          <li>
-            <img src="./img/employees/" alt="Victoria Dobrzhanska" />
-            <h3>Victoria Dobrzhanska</h3>
-            <p>
+        <ul class="comments-list">
+          <li class="comments-item">
+            <img
+              class="comments-photo"
+              src="./img/employees/viktoria.png"
+              alt="Victoria Dobrzhanska"
+            />
+            <h3 class="comments-title">Victoria Dobrzhanska</h3>
+            <p class="comments-text">
               I love this chocolate bar. Perfect combination of light crispy
               wafer, covered in a thin layer chocolate.
             </p>
           </li>
-          <li>
-            <img src="" alt="Nazar Babenko" />
-            <h3>Nazar Babenko</h3>
-            <p>
+          <li class="comments-item">
+            <img
+              class="comments-photo"
+              src="./img/employees/nazar.png"
+              alt="Nazar Babenko"
+            />
+            <h3 class="comments-title">Nazar Babenko</h3>
+            <p class="comments-text">
               This chocolate confection is a delight! A delight! The wafer is
               light and crisp, the hazelnut cream is smooth, and the chocolate
               is good.
             </p>
           </li>
-          <li>
-            <img src="" alt="Olena Kampusch" />
-            <h3>Olena Kampusch</h3>
-            <p>
+          <li class="comments-item">
+            <img
+              class="comments-photo"
+              src="./img/employees/olena.png"
+              alt="Olena Kampusch"
+            />
+            <h3 class="comments-title">Olena Kampusch</h3>
+            <p class="comments-text">
               Chocolate is a family favourite treat. Love the delicious smooth
               chocolate and the creaminess inside. The wafer is soft but
               crunchy.
@@ -452,65 +482,87 @@
           </li>
         </ul>
 
-        <button type="button">Leave a review</button>
+        <button type="button" class="comments-btn">Leave a review</button>
       </section>
     </main>
 
-    <!-- <footer>
-      <div>
-        <h2>
-          <span class="accent">Chocolate</span>
-          a delicious cure for a bad day
-        </h2>
+    <footer>
+      <div class="container">
+        <div class="footer-info">
+          <h2 class="footer-title">
+            <span class="accent">Chocolate</span>
+            a delicious cure for a bad day
+          </h2>
 
-        <h3>Social networks</h3>
-        <ul>
-          <li>
-            <img src="" alt="Instagram" />
-          </li>
-          <li>
-            <img src="" alt="Facebook" />
-          </li>
-          <li>
-            <img src="" alt="Twitter" />
-          </li>
-        </ul>
+          <div class="footer-social">
+            <div>
+              <h3 class="footer-subtitle">Social networks</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="https://www.instagram.com/escbrk/" target="_blank">
+                    <svg class="social-icon">
+                      <use href="./img/icons/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-item">
+                  <a href="https://www.facebook.com/Escobrk" target="_blank">
+                    <svg class="social-icon">
+                      <use href="./img/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" target="_blank">
+                    <svg class="social-icon">
+                      <use href="./img/icons/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-        <h3>Contact us</h3>
-        <address>
-          <ul>
-            <li>
-              <a href="tel:+380684439426">+380 (68) 443-94-26</a>
-            </li>
-            <li>
-              <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
-            </li>
-          </ul>
-        </address>
+            <div>
+              <h3 class="footer-subtitle">Contact us</h3>
+              <address>
+                <ul class="contact-list">
+                  <li class="contact-item">
+                    <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+                  </li>
+                  <li class="contact-item">
+                    <a href="mailto:simplychoc@gmail.com"
+                      >simplychoc@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="#process">How it’s made?</a>
+              </li>
+              <li>
+                <a href="#chocolateIsLoved">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+
+          <form>
+            <label for="">
+              <input type="text" placeholder="Enter your email" />
+            </label>
+            <button>Subscribe</button>
+          </form>
+        </div>
       </div>
-
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="#process">How it’s made?</a>
-            </li>
-            <li>
-              <a href="#chocolateIsLoved">Chocolate is loved</a>
-            </li>
-          </ul>
-        </nav>
-
-        <form>
-          <label for="">
-            <input type="text" placeholder="Enter your email" />
-          </label>
-          <button>Subscribe</button>
-        </form>
-      </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
