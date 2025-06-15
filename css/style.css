@@ -685,4 +685,55 @@ footer {
   margin-bottom: 14px;
 }
 
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 96px;
+}
+
+.footer-nav-list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.footer-nav-list a {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.footer-form {
+  display: flex;
+  column-gap: 8px;
+}
+
+.footer-input {
+  padding: 14px 24px;
+  width: 100%;
+  width: 313px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.form-btn {
+  color: var(--white);
+  background-color: var(--accent);
+  border-radius: 100px;
+  padding: 17px 40px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 /*! ============= /FOOTER STYLES =============*/
