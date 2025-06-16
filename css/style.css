@@ -685,6 +685,7 @@ section:nth-child(2) {
 }
 
 .comments-btn {
+  color: inherit;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
