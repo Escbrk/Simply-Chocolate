@@ -49,6 +49,7 @@ body {
 img {
   display: block;
   width: 100%;
+  max-width: 100%;
 }
 
 * {
@@ -86,6 +87,7 @@ section:nth-child(2) {
   margin-top: 80px;
 }
 
+/*! Social Icon - поменять потом hover на link!!! и размер задать атрибутами!!!!!!! */
 .social-icon:hover,
 .social-icon:focus {
   stroke: var(--accent);
@@ -177,6 +179,7 @@ section:nth-child(2) {
 
 .hero-section > .container {
   height: 600px;
+  background-color: var(--gray);
   background: linear-gradient(
       180deg,
       rgba(17, 17, 17, 0) 0%,
