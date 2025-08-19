@@ -87,9 +87,9 @@ section:nth-child(2) {
   margin-top: 80px;
 }
 
-/*! Social Icon - поменять потом hover на link!!! и размер задать атрибутами!!!!!!! */
-.social-icon:hover,
-.social-icon:focus {
+/*! Social Icon - Размер задать атрибутами!!!!!!! */
+.social-list-link:hover .social-icon,
+.social-list-link:focus .social-icon {
   stroke: var(--accent);
 }
 
@@ -117,19 +117,26 @@ section:nth-child(2) {
 }
 
 .logo-icon {
-  fill: transparent;
+  /* fill: transparent; <--- also works */
+  fill: none;
   stroke: var(--accent);
 }
 
+.social-list-link {
+  display: block;
+  line-height: 0;
+}
+
 .social-icon {
-  fill: transparent;
+  fill: none;
   stroke: var(--dark);
+  transition: stroke 300ms linear;
 }
 
 .page-header,
 .main-nav,
 .menu,
-.header-media {
+.social-media {
   display: flex;
 }
 
@@ -138,7 +145,7 @@ section:nth-child(2) {
   align-items: center;
 }
 
-.header-media {
+.social-media {
   column-gap: 14px;
 }
 
@@ -151,6 +158,7 @@ section:nth-child(2) {
 
 .menu-item a {
   color: var(--dark);
+  transition: color 300ms linear;
 }
 
 .menu-item a:hover,
@@ -182,8 +190,8 @@ section:nth-child(2) {
   background-color: var(--gray);
   background: linear-gradient(
       180deg,
-      rgba(17, 17, 17, 0) 0%,
-      rgba(17, 17, 17, 0.4) 100%
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
     ),
     url(../img/hero.jpg) lightgray -70.319px -105.03px / 110.32% 139.265%
       no-repeat;
@@ -365,7 +373,6 @@ section:nth-child(2) {
   border-radius: 15px;
   padding: 28px 23px;
   position: relative;
-  transition: transform 850ms ease;
   overflow: hidden;
   /* backface-visibility: hidden; */
   /* transform-style: preserve-3d; */
@@ -391,7 +398,7 @@ section:nth-child(2) {
   height: 100%;
 
   transform: translateX(-100%);
-  transition: transform 0.85s ease-in-out;
+  transition: transform 850ms ease-in-out;
 }
 
 .overlay-title {
@@ -413,22 +420,31 @@ section:nth-child(2) {
 
 .overlay-item {
   padding: 6px 16px;
+
+  /*? or 
+  height: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center; */
+
   border-radius: 35px;
   white-space: nowrap; /* запрещает перенос текста (в данном случае - верхних элементов) */
-}
-
-.overlay-item:first-child {
-  background-color: var(--accent);
-}
-
-.overlay-item:last-child {
-  background-color: transparent;
   border: 1px solid var(--accent);
+}
+
+.overlay-item:nth-child(odd) {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.overlay-item:nth-child(even) {
+  background-color: transparent;
 }
 
 .overlay-text {
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   max-height: 125px;
   height: 100%;
