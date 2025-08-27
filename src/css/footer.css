@@ -109,7 +109,7 @@ footer .social-icon {
 .footer-input:active,
 .footer-input:focus {
   border-color: var(--accent);
-  outline: none;
+  outline: transparent;
 }
 
 .footer-input::placeholder {

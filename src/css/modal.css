@@ -44,58 +44,14 @@
   max-height: 794px;
   padding: 40px;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
 }
 
 .modal-title {
+  max-width: 298px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin-bottom: 40px;
-}
-
-.modal .modal-form-label {
-  color: rgba(64, 64, 64, 0.3);
-  font-size: 14px;
-  letter-spacing: -0.02em;
-}
-
-.modal-form-input {
-  margin-bottom: 18px;
-  height: 68px;
-  border-radius: 13px;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  transition: border 250ms linear;
-}
-
-.modal-form-textarea {
-  border-radius: 13px;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  resize: none;
-  height: 137px;
-  transition: border 250ms linear;
-  padding-top: 22px;
-  padding-left: 24px;
-}
-
-.checkbox-wrapper {
-  margin-bottom: 40px;
-}
-
-.modal-form-textarea:focus,
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent, #fd9222);
-}
-
-.modal .modal-form-label {
-  margin-bottom: 8px;
-}
-
-.modal-form-textarea::placeholder {
-  color: rgba(64, 64, 64, 0.3);
-  font-size: 18px;
-  letter-spacing: -0.02em;
 }

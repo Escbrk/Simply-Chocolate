@@ -674,7 +674,9 @@
               <address>
                 <ul class="contact-list">
                   <li class="contact-item">
-                    <a class="contact-link" href="tel:+15878373333">+1 (587)-837-3333</a>
+                    <a class="contact-link" href="tel:+15878373333"
+                      >+1 (587)-837-3333</a
+                    >
                   </li>
                   <li class="contact-item">
                     <a class="contact-link" href="mailto:simplychoc@gmail.com"
@@ -697,7 +699,9 @@
                 <a class="footer-nav-link" href="#process">How it's made?</a>
               </li>
               <li>
-                <a class="footer-nav-link" href="#chocolateIsLoved">Chocolate is loved</a>
+                <a class="footer-nav-link" href="#chocolateIsLoved"
+                  >Chocolate is loved</a
+                >
               </li>
             </ul>
           </nav>
@@ -717,7 +721,7 @@
       </div>
     </footer>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button
           type="button"
@@ -729,76 +733,97 @@
           </svg>
         </button>
 
-        <h2 class="modal-title">
+        <p class="modal-title">
           Leave a review about <span class="accent">our chocolate</span>
-        </h2>
+        </p>
 
         <form class="review-form">
           <div class="form-input-wrapper">
-            <label class="modal-form-label" for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              required
-              placeholder="Mike Jackson"
-              class="modal-form-input"
-            />
-            <svg class="form-input-icon">
-              <use href="./src/img/icons/sprite.svg#icon-user"></use>
-            </svg>
-          </div>
-
-          <div class="form-input-wrapper">
-            <label class="modal-form-label" for="email">Email</label>
-
-            <input
-              type="email"
-              id="email"
-              required
-              placeholder="example@mail.com"
-              class="modal-form-input"
-            />
-            <svg class="form-input-icon">
-              <use href="./src/img/icons/sprite.svg#icon-mail"></use>
-            </svg>
-          </div>
-
-          <div class="form-input-wrapper">
-            <label class="modal-form-label" for="phone_number"
-              >Phone number</label
+            <label class="modal-form-label" for="user_name"
+              >Name<sup class="required">*</sup></label
             >
-            <input
-              type="tel"
-              id="phone_number"
-              required
-              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-              placeholder="123-456-7890"
-              class="modal-form-input"
-            />
-            <svg class="form-input-icon">
-              <use href="./src/img/icons/sprite.svg#icon-phone"></use>
-            </svg>
+            <div class="input-wrapper">
+              <input
+                class="modal-form-input"
+                type="text"
+                name="user_name"
+                id="user_name"
+                pattern="[a-zA-Z]+"
+                required
+                placeholder="Mike Jackson"
+              />
+              <svg class="form-input-icon">
+                <use href="./src/img/icons/sprite.svg#icon-user"></use>
+              </svg>
+            </div>
           </div>
 
-          <label class="modal-form-label" for="review">Comment</label>
-          <textarea
-            class="modal-form-textarea"
-            name="review"
-            id="review"
-            placeholder="Enter text"
-          ></textarea>
+          <div class="form-input-wrapper">
+            <label class="modal-form-label" for="user_email"
+              >Email<sup class="required">*</sup></label
+            >
+
+            <div class="input-wrapper">
+              <input
+                class="modal-form-input"
+                type="email"
+                name="user_email"
+                id="user_email"
+                required
+                placeholder="example@mail.com"
+              />
+              <svg class="form-input-icon">
+                <use href="./src/img/icons/sprite.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-input-wrapper">
+            <label class="modal-form-label" for="user_phone_number"
+              >Phone number<sup class="required">*</sup></label
+            >
+            <div class="input-wrapper">
+              <input
+                type="tel"
+                name="user_phone_number"
+                id="user_phone_number"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="123-456-7890"
+                placeholder="123-456-7890"
+                class="modal-form-input"
+              />
+              <svg class="form-input-icon">
+                <use href="./src/img/icons/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-input-wrapper">
+            <label class="modal-form-label" for="user_comment">Comment</label>
+            <textarea
+              class="modal-form-textarea"
+              name="user_comment"
+              id="user_comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
 
           <div class="checkbox-wrapper">
             <input
               type="checkbox"
-              name="policy"
-              id="policy"
-              class="modal-form-input policy-checkbox"
+              name="privacy_policy"
+              id="privacy_policy"
+              class="policy-checkbox-input"
               required
+              value="true"
             />
-            <label for="policy" class="custom-checkbox modal-form-label"
-              >I accept the terms and conditions of the
-              <a href="#" class="accent">Privacy Policy</a></label
+            <label for="privacy_policy" class="custom-checkbox modal-form-label"
+              >I accept the terms and conditions of the &nbsp;<a
+                href="#"
+                class="accent"
+                >Privacy Policy</a
+              ><sup class="required">*</sup></label
             >
           </div>
 
