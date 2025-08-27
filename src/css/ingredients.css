@@ -1,0 +1,131 @@
+.ingredients-title {
+  margin: 0 auto 50px;
+  width: 100%;
+  max-width: 417px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
+}
+
+.ingredients-item {
+  width: calc((100% - 96px) / 4);
+  border-radius: 15px;
+  padding: 28px 23px;
+  position: relative;
+  overflow: hidden;
+  /* backface-visibility: hidden; */
+  /* transform-style: preserve-3d; */
+  /* perspective: 1000px; */
+}
+
+.ingredients-item:hover .ingredients-item-overlay {
+  transform: translateX(0);
+}
+
+.ingredients-item:nth-child(4n + 3):hover {
+  outline: 1px solid var(--accent);
+}
+
+.ingredients-item-overlay {
+  background-color: var(--white);
+  color: black;
+  position: absolute;
+  padding: 20px 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translateX(-100%);
+  transition: transform 850ms ease-in-out;
+}
+
+.overlay-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.overlay-list {
+  display: flex;
+  column-gap: 6px;
+  font-size: 10px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.overlay-item {
+  padding: 6px 16px;
+
+  /*? or 
+  height: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center; */
+
+  border-radius: 35px;
+  white-space: nowrap; /* запрещает перенос текста (в данном случае - верхних элементов) */
+  border: 1px solid var(--accent);
+}
+
+.overlay-item:nth-child(odd) {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.overlay-item:nth-child(even) {
+  background-color: transparent;
+}
+
+.overlay-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  max-height: 125px;
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.ingredients-item:nth-child(even) {
+  background-color: var(--white);
+  border: 1px solid var(--accent);
+}
+.ingredients-item:nth-child(4n + 1) {
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  color: var(--white);
+}
+.ingredients-item:nth-child(4n + 3) {
+  background-color: var(--violet);
+  color: var(--white);
+}
+
+.ingredients-list-title {
+  margin-top: 36px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+}
+
+.ingredients-icon {
+  fill: transparent;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.ingredients-item:nth-child(odd) .ingredients-icon {
+  stroke: var(--white);
+}
+.ingredients-item:nth-child(even) .ingredients-icon {
+  stroke: var(--accent);
+}
