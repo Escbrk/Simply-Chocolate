@@ -34,17 +34,25 @@
         </svg>
       </a>
 
+      <button class="burger-menu" type="button">
+        <svg width="28" height="28">
+          <use href="./src/img/icons/sprite.svg#icon-open-menu"></use>
+        </svg>
+      </button>
+
       <div class="header-nav-container">
         <nav class="main-nav">
           <ul class="menu">
             <li class="menu-item">
-              <a href="index.html">Home</a>
+              <a class="header-link" href="index.html">Home</a>
             </li>
             <li class="menu-item">
-              <a href="#process">How it's made?</a>
+              <a class="header-link" href="#process">How it's made?</a>
             </li>
             <li class="menu-item">
-              <a href="#chocolateIsLoved">Chocolate is loved</a>
+              <a class="header-link" href="#chocolateIsLoved"
+                >Chocolate is loved</a
+              >
             </li>
           </ul>
         </nav>
@@ -91,11 +99,11 @@
     <main>
       <!--! HERO SECTION -->
       <section class="hero-section container">
-        <div class="container">
+        <div class="hero-container">
           <h1 class="title">
-            Treat yourself or a loved one to <br />
-            our finest ingredients for a moment <br />
-            of pure delight!
+            Treat yourself or a loved one <br class="br-mobile" />
+            to <br class="br-tablet" />
+            our finest ingredients for a moment of pure delight!
           </h1>
 
           <div class="btn-container">
@@ -162,7 +170,7 @@
       </section>
 
       <!--! INGREDIENTS SECTION -->
-      <section class="ingredients-section container">
+      <!-- <section class="ingredients-section container">
         <h2 class="ingredients-title section-title">
           It all adds up to one exceptional
           <span class="accent">taste</span>
@@ -357,10 +365,10 @@
             </div>
           </li>
         </ul>
-      </section>
+      </section> -->
 
       <!--! PROCESS SECTION -->
-      <section id="process" class="process-section container">
+      <!-- <section id="process" class="process-section container">
         <h2 class="section-title">
           How it's
           <span class="accent">made</span>
@@ -406,10 +414,10 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!--! PRODUCTS SECTION -->
-      <section class="products-section container">
+      <!-- <section class="products-section container">
         <h2 class="section-title">
           Our
           <span class="accent">products</span>
@@ -505,10 +513,10 @@
             <p class="products-price">C&dollar;4.99</p>
           </li>
         </ul>
-      </section>
+      </section> -->
 
       <!--! SELLERS SECTION -->
-      <section class="sellers-section container">
+      <!-- <section class="sellers-section container">
         <h2 class="section-title"><span class="accent">Top</span> Sellers</h2>
 
         <ul class="sellers-list">
@@ -566,10 +574,10 @@
             <h3 class="sellers-title">Dark chocolate</h3>
           </li>
         </ul>
-      </section>
+      </section> -->
 
       <!--! COMMENTS SECTION -->
-      <section id="chocolateIsLoved" class="container">
+      <!-- <section id="chocolateIsLoved" class="container">
         <h2 class="section-title">
           <span class="accent">chocolate</span>
           is loved
@@ -617,11 +625,11 @@
         </ul>
 
         <button type="button" class="comments-btn">Leave a review</button>
-      </section>
+      </section> -->
     </main>
 
     <!--! FOOTER -->
-    <footer>
+    <!-- <footer>
       <div class="container">
         <div class="footer-info">
           <h2 class="footer-title">
@@ -719,9 +727,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="modal-overlay is-open">
+    <!--! MODAL -->
+    <!-- <div class="modal-overlay">
       <div class="modal">
         <button
           type="button"
@@ -829,6 +838,62 @@
 
           <button type="submit" class="send-form-btn">Send</button>
         </form>
+      </div>
+    </div> -->
+
+    <!--! MOBILE MENU  -->
+    <div class="mobile-menu">
+      <div class="container">
+        <button class="close-mobile-menu-btn" type="button">
+          <svg>
+            <use href="./src/img/icons/sprite.svg#icon-x-close"></use>
+          </svg>
+        </button>
+
+        <nav class="main-nav-mobile">
+          <ul class="mobile-menu-list">
+            <li class="menu-item">
+              <a class="mobile-menu-link" href="index.html">Home</a>
+            </li>
+            <li class="menu-item">
+              <a class="mobile-menu-link" href="#process">How it's made?</a>
+            </li>
+            <li class="menu-item">
+              <a class="mobile-menu-link" href="#chocolateIsLoved"
+                >Chocolate is loved</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <address>
+          <ul class="mobile-social-media">
+            <li>
+              <a href="https://www.instagram.com/escbrk/" target="_blank">
+                <svg class="social-icon">
+                  <use href="./src/img/icons/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/Escobrk" target="_blank">
+                <svg
+                  class="social-icon"
+                  aria-label="simply chocolate logo icon"
+                >
+                  <use href="./src/img/icons/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <svg class="social-icon">
+                  <use href="./src/img/icons/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
       </div>
     </div>
 
