@@ -20,6 +20,10 @@
   border: 0;
 }
 
+.is-modal-open {
+  overflow: hidden;
+}
+
 .container {
   padding: 0 16px;
   width: calc(335px + (16px * 2));
