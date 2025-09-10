@@ -187,7 +187,7 @@ section:last-child {
       rgba(17, 17, 17, 0),
       rgba(17, 17, 17, 0.4)
     ),
-    url(/img/hero/hero-mobile.jpg);
+    url(../img/hero/hero-mobile.jpg);
   border-radius: 30px;
   padding: 20px;
   background-position: center;
@@ -203,7 +203,7 @@ section:last-child {
         rgba(17, 17, 17, 0),
         rgba(17, 17, 17, 0.4)
       ),
-      url(/img/hero/hero-mobile@2x.jpg);
+      url(../img/hero/hero-mobile@2x.jpg);
   }
 }
 
